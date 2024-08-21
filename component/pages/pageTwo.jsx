@@ -1,7 +1,7 @@
 import React from "react";
 
 function pageTwo({ formData, setFormData, nextStep, prevStep, errors }) {
-  const [formData, setFormData] = React.useState({
+  const [formData, setFormData, nextStep, prevStep] = React.useState({
     fullName: "",
     email: "",
     dateOfBirth: "",

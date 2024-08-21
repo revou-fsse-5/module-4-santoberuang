@@ -1,7 +1,7 @@
 import React from "react";
 
 function pageThree({ formData, setFormData, prevStep, handleSubmit, errors }) {
-  const [formData, setFormData] = React.useState({
+  const [formData, setFormData, prevStep, handleSubmit] = React.useState({
     fullName: "",
     email: "",
     dateOfBirth: "",
