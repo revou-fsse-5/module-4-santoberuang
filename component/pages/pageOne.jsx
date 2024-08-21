@@ -1,6 +1,6 @@
 import React from "react";
 
-function PageOne({ formData, setFormData, nextStep, errors }) {
+function PageOne({ formData, setFormData }) {
   const [formData, setFormData] = React.useState({
     fullName: "",
     email: "",
@@ -36,11 +36,7 @@ function PageOne({ formData, setFormData, nextStep, errors }) {
           onChange={handleChange}
           className="w-full border border-gray-300 p-2 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
-        <div>
-          {errors.fullName && (
-            <div className="text-red-500 text-sm">{errors.fullName}</div>
-          )}
-        </div>{" "}
+
         <br />
         <div>
           <label
@@ -57,9 +53,6 @@ function PageOne({ formData, setFormData, nextStep, errors }) {
             onChange={handleChange}
             className="w-full border border-gray-300 p-2 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
-          {errors.email && (
-            <div className="text-red-500 text-sm">{errors.email}</div>
-          )}
         </div>
         <div>
           <label

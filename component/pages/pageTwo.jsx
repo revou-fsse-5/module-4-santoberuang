@@ -1,19 +1,18 @@
 import React from "react";
 
-const [formData, setFormData] = React.useState({
-  fullName: "",
-  email: "",
-  dateOfBirth: "",
-  streetAdress: "",
-  city: "",
-  state: "",
-  zipCode: "",
-  userName: "",
-  password: "",
-});
-const [errors, setErrors] = React.useState({});
-
 function pageTwo({ formData, setFormData, nextStep, prevStep, errors }) {
+  const [formData, setFormData] = React.useState({
+    fullName: "",
+    email: "",
+    dateOfBirth: "",
+    streetAdress: "",
+    city: "",
+    state: "",
+    zipCode: "",
+    userName: "",
+    password: "",
+  });
+  const [errors, setErrors] = React.useState({});
   const handleChange = (e) => {
     setFormData({
       ...formData,
